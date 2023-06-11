@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A405289B-B720-462A-B9A8-A769356A54FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLSTMINI</RootNamespace>
+    <AssemblyName>QLSTMINI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BCTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCTK.Designer.cs">
+      <DependentUpon>BCTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BCTKSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCTKSP.Designer.cs">
+      <DependentUpon>BCTKSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTPN.Designer.cs">
+      <DependentUpon>CTPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTPX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTPX.Designer.cs">
+      <DependentUpon>CTPX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienNhap.Designer.cs">
+      <DependentUpon>NhanVienNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChitietpieuxuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChitietpieuxuat.Designer.cs">
+      <DependentUpon>frmChitietpieuxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNCC.Designer.cs">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KetNoi.cs" />
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuNhap.Designer.cs">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLHH.Designer.cs">
+      <DependentUpon>QLHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNH.Designer.cs">
+      <DependentUpon>QLNH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNV.Designer.cs">
+      <DependentUpon>QLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TLTK.Designer.cs">
+      <DependentUpon>TLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_QLSTMN_C_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_QLSTMN_C_DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BCTK.resx">
+      <DependentUpon>BCTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCTKSP.resx">
+      <DependentUpon>BCTKSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTPN.resx">
+      <DependentUpon>CTPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTPX.resx">
+      <DependentUpon>CTPX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienNhap.resx">
+      <DependentUpon>NhanVienNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChitietpieuxuat.resx">
+      <DependentUpon>frmChitietpieuxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNCC.resx">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuNhap.resx">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QLHH.resx">
+      <DependentUpon>QLHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNH.resx">
+      <DependentUpon>QLNH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNV.resx">
+      <DependentUpon>QLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLTK.resx">
+      <DependentUpon>TLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_QLSTMN_C_DataSet.xsc">
+      <DependentUpon>_QLSTMN_C_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_QLSTMN_C_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_QLSTMN_C_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_QLSTMN_C_DataSet.xss">
+      <DependentUpon>_QLSTMN_C_DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3205101640579_c2968fa60d1a2a2dd1b4c10298118145.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3305506773056_bb022039482ebd3d349b8e679253361c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce477-logo-utt-2014-nobackground-orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UTT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UTT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UTT2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UTT3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiet-ke-sieu-thi-mini-1333x800-1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
